@@ -20,7 +20,7 @@ score.m - Matlab script that compares the neural networks output to the correct 
 
 formatTargets.py - python script that takes a csv of hand values and converts it to Matlab readable data (e.g. takes a 9 and changes it to 0,0,0,0,0,0,0,0,0,1)
 
-## Data ## 
+## Data 
 The data used is from: http://archive.ics.uci.edu/ml/datasets/Poker+Hand
 A card is represented as a tuple of suit and value. A hand is 5 tuples (10 numbers). The 11th number in the data is the hand value ranging from 0-9. For more information check out  http://archive.ics.uci.edu/ml/machine-learning-databases/poker/poker-hand.names
 
