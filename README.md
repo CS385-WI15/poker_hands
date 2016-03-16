@@ -3,7 +3,7 @@
 Authors: James Barnes, Jinu Jacob, Devin McGinty 
 
 ## Purpose ##
-The purpose of this project is to train a neural network to recognize poker hands accurately using Matlabs neural networks.
+The purpose of this project is to train a neural network to recognize poker hands accurately using Matlab's neural networks.
 
 ## Files ##
 pokerNN.m - Matlab script that loads data from csv, trains neural network, runs net on test data, and outputs results to csv
@@ -30,21 +30,21 @@ trainTargetMatlab.csv - the training targets for the neural network which have b
 
 testInput.csv - the testing inputs for the neural network
 
-testTargetMatlab.csv - the correct test outputs to compare to the neural networks outputs
+testTargetMatlab.csv - the correct test outputs to compare to the neural network's outputs
 
-./NoSuits - contains training and test data where the suits of each card are removed. Only 5 numbers for each cards value are used for a hand.
+./NoSuits - contains training and test data where the suits of each card are removed. Only 5 numbers, one for each card's value, are used to represent a hand.
 
 ./sorted - training inputs and targets sorted by hand values
 
-./evenData - training inputs and targets that have been adjusted to have an equal number of hands for each value (approx. 400). (The original data set hand frequencies resemble actual hand frequencies)
+./evenData - training inputs and targets that have been adjusted to have an equal number of hands for each type of hand (approx. 400). (The original data set hand frequencies resemble actual hand frequencies)
 
 ## How to Run ##
 
-Run pokerNN.m to train the neural network and test its accuracy on the testing data. To change the training data change the value of *input* and *target* in the pokerNN.m. If you are using a file that is not in the Matlab directory or is in a subdirectory make sure to include the entire path to the file. The test data can also be changed by changing the value of *testInput* in pokerNN.m.
+Run pokerNN.m to train the neural network and test its accuracy on the testing data. To change the training data change the value of *input* and *target* in pokerNN.m. If you are using a file that is not in the Matlab directory or is in a subdirectory make sure to include the entire path to the file. The test data can also be changed by changing the value of *testInput* in pokerNN.m.
 
 After pokerNN.m has run and created output.csv, run formatTargets.py in the same directory containing the output.
 
-Then run score.m to score the test results.
+Then run score.m to score the test results. To change test targets (the values which the net's output are compared to) change the value of *testTarget* in score.m.
 
 
 
